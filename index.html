@@ -12,7 +12,8 @@
 <body>
     <h1>Seleccionar archivos de Open Cases</h1>
     <p>Haz clic en el botón para buscar archivos en tu carpeta compartida:</p>
-    
+    var button = Dropbox.createChooseButton(options);
+document.getElementById("container").appendChild(button);
     <!-- Contenedor del Chooser -->
     <div id="dropbox-chooser" style="margin: 20px 0;"></div>
     
